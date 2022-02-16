@@ -1,30 +1,59 @@
 <?php
 
+interface User {
+    public function seLogar();
+    public function apagar();
+}
+
 class Usuario {
     private $nome = 'Cleiton';
     private $email;
     private $nasc;
 
     public function seLogar() {
-        echo "Logado";
+        echo "Logado \n";
     }
 
     public function seDeslogar() {
-        echo "Tchau";
+        echo "Tchau \n";
     }
 
     public function setNome($val) {
         $this->nome = $val;
     }
 
+    public function getNome() {
+        $this->nome = $nome;
+    }
+
 }
 
-$cleiton = new Usuario;
+//$cleiton = new Usuario;
 
-$cleiton->seLogar();
+Usuario::seLogar();
 
-$cleiton->setNome("Cleitinho");
+// $cleiton->seLogar();
 
-var_dump($cleiton);
+// $cleiton->setNome("Cleitinho");
 
-echo 'O meu nome é ' . $cleiton->nome;
+// var_dump($cleiton);
+
+// echo 'O meu nome é ' . $cleiton->nome;
+
+class Professor implements User {
+    public function mudaNome() {
+        $this->nome = 'Bono';
+    }
+
+    public function seLogar() {
+
+    }
+
+    public function apagar() {
+
+    }
+}
+
+// $cleiton = new Professor;
+// $cleiton->mudaNome();
+// echo 'Meu nome é ' . $cleiton->getNome();

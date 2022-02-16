@@ -20,3 +20,7 @@ O UML visa mostrar o projeto de um sistema, utilizando diagramas, podendo funcio
 Um uso incorreto do UML é projetá-lo para o projeto inteiro, e não para funcionalidades em partes, como também assumir que novatos possam projetar com UML, pois não tem os conceitos bem fixados sobre POO.
 
 Diagrama de classes: representar as classes e como elas se comunicam entre si.
+Para realizar o diagrama de classe, é necessário representar os seus atributos e também os seus métodos
+Public = + / Private = - / Protected = # / Package = ˜
+Atributos estáticos são representados pela linha sublinhada
+Uma flecha significa herança, onde o apontamento dela (flecha fechada) significa qual classe estará herdando a classe pai.
