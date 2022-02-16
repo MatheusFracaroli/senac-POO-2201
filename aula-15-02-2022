@@ -18,3 +18,5 @@ A raiz do UML é a programação orientada a objeto.
 O UML visa mostrar o projeto de um sistema, utilizando diagramas, podendo funcionar de tais tipos: atividades, componentes individuais do sistema, funcionamento do sistema, interface de usuário.
 
 Um uso incorreto do UML é projetá-lo para o projeto inteiro, e não para funcionalidades em partes, como também assumir que novatos possam projetar com UML, pois não tem os conceitos bem fixados sobre POO.
+
+Diagrama de classes: representar as classes e como elas se comunicam entre si.
