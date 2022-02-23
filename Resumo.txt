@@ -1,0 +1,44 @@
+Só é possível herdar de uma classe.
+
+Uma classe abstrata é caracterizada por poder ter implementações dentro dela. Um model pode ser considerado como classe abstrata.
+
+Polimorfismo se classifica pela possibilidade de se modificar o comportamento, como por exemplo: classe cachorro implementando a classe animal, que contém o método de barulho, sendo auau e numa classe pássaro, seria piu piu.
+
+DIAGRAMAS UML
+
+- Diagrama de Componentes: ilustra a conexão entre os componentes.
+Um componente pode ser diversas coisas, como, por exemplo: banco de dados, classe...
+Conector plug representa como é a comunicação entre os componentes.
+Plug: quem espera ser conectado (API), Conector: quem irá conectar no plug (Site).
+
+- Diagrama de estrutura composta: detalha a implementação do algoritmo
+Exemplificar um módulo do diagrama de componentes é um bom exemplo de aplicação para o diagrama de estrutura composta.
+
+- Diagrama de implantação: diagrama que representa o que é necessário para que a solução seja consumida.
+
+- Diagrama de objeto: diagrama que representa os objetos como se eles já estivessem inicializados com os seus respectivos valores.
+
+- Diagrama de pacote: Dependências que existem no sistema.
+São representados os frameworks que são utilizados, por exemplo.
+
+- Diagrama de Perfil: É um modelo que é usado para explicar outros modelos.
+
+- Diagrama de atividade: é o diagrama que exibe as opções de escolha, onde inicia uma atividade, representado no fluxograma.
+Ifs são como pipas.
+
+- Diagrama de sequência: Representa a sequência de processos e as mensagens trocadas por eles.
+Entidade, controle.
+A sequência é representada de cima pra baixo, tendo a representação da request e da sua resposta posteriormente.
+
+- Diagrama de caso de uso: representa como podemos interagir de diversas formas com um sistema.
+Temos os atores, representados pelo bonequinho de palito, que interagem com o sistema diferentemente de um funcionário, que possui permissões diferentes que o cliente comum, por exemplo.
+
+- Diagrama de comunicação: é basicamente como o diagrama de sequência, mas é guiado por números, ao invés de ir de cima para baixo.
+
+- Diagrama de visão geral da interação: é como o diagrama de atividades, mas eu posso utilizar pedaços de outros diagramas se achar importante mostrá-los para o cliente.
+
+- Diagrama de estado: representa comportamentos de interação entre o produto e o hardware, como o que acontece quando um botão é clicado no seu teclado.
+Representa qual é o estado da máquina nos momentos que há a interação.
+
+- Diagrama de tempo: detalha o comportamento dos objetos em um determinado período de tempo.
+Exemplo: quando o usuário escreve a url, o browser faz a requisição para o servidor DNS, representando o tempo que essa interação demorará.
