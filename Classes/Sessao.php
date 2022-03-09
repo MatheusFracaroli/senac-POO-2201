@@ -7,6 +7,23 @@ class Sessao implements InterfaceCrud {
     private $dispositivo;
     private $localizacao;
     private $ultimaAtualizacao;
+    private $id;
+
+    public function login() {
+        echo "Logou";
+    }
+
+    public function destruir() {
+        echo "Sessão destruída";
+    }
+
+    public function logout() {
+        echo "Logout efetuado";
+    }
+
+    public function atualizar() {
+        echo "Atualizado com sucesso";
+    }
 
     function criar(array $dados):bool {
         echo "Criado";

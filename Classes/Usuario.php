@@ -1,8 +1,9 @@
 <?php
 chdir(__DIR__);
-include "../Interfaces/InterfaceCrud.php";
+include_once "../Interfaces/InterfaceCrud.php";
+include_once "../Interfaces/Usuario.interface.php";
 
-class Usuario implements InterfaceCrud {
+class Usuario implements InterfaceCrud, IUsuario {
     private $email;
     private $nome;
     private $id;
@@ -39,5 +40,9 @@ class Usuario implements InterfaceCrud {
 
     function listar(int $id = null):array {
         echo "Listado";
+    }
+
+    public function acao(array $idProduto):bool {
+        echo "Fez a ação";
     }
 }
