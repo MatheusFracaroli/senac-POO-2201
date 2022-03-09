@@ -1,5 +1,6 @@
 <?php
-include "InterfaceCrud.php";
+chdir(__DIR__);
+include "../Interfaces/InterfaceCrud.php";
 
 class Estoque implements InterfaceCrud {
     private $idProduto;
@@ -20,7 +21,7 @@ class Estoque implements InterfaceCrud {
         echo "Editado";
     }
 
-    function listar(int $id = null):bool {
+    function listar(int $id = null):array {
         echo "Listado";
     }
     

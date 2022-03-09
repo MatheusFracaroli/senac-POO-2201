@@ -1,5 +1,6 @@
 <?php
-include "InterfaceCrud.php";
+chdir(__DIR__);
+include "../Interfaces/InterfaceCrud.php";
 
 class Produto implements InterfaceCrud {
     private $id;
