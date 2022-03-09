@@ -1,4 +1,6 @@
 <?php
+include "InterfaceCrud.php";
+
 class Estoque implements InterfaceCrud {
     private $idProduto;
     private $quantidade;

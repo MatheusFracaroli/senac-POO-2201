@@ -1,4 +1,6 @@
 <?php
+include "InterfaceCrud.php";
+
 class Perfil implements InterfaceCrud {
     private $id;
     private $nome;

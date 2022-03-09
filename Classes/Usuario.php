@@ -1,4 +1,6 @@
 <?php
+include "InterfaceCrud.php";
+
 class Usuario implements InterfaceCrud {
     private $email;
     private $nome;
@@ -6,19 +8,35 @@ class Usuario implements InterfaceCrud {
     private $senha;
     private $id_perfil;
 
-    function cadastrar() {
+    private function cadastrar() {
         echo "Cadastrado";
     }
 
-    function atualizar() {
+    private function atualizar() {
         echo "Atualizado";
     }
 
-    function deletar() {
+    private function deletar() {
         echo "Deletado";
     }
 
-    function getUsuario() {
+    private function getUsuario() {
         echo "Nome de usuario x";
+    }
+
+    function criar() {
+        echo "Criado";
+    }
+
+    function apagar() {
+        echo "Apagado";
+    }
+
+    function editar() {
+        echo "Editado";
+    }
+
+    function listar() {
+        echo "Listado";
     }
 }

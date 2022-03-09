@@ -1,4 +1,6 @@
 <?php
+include "InterfaceCrud.php";
+
 class Produto implements InterfaceCrud {
     private $id;
     private $nome;
