@@ -24,19 +24,19 @@ class Usuario implements InterfaceCrud {
         echo "Nome de usuario x";
     }
 
-    function criar() {
+    function criar(array $dados):bool {
         echo "Criado";
     }
 
-    function apagar() {
+    function apagar(int $id):bool {
         echo "Apagado";
     }
 
-    function editar() {
+    function editar(int $id, array $dados):bool {
         echo "Editado";
     }
 
-    function listar() {
+    function listar(int $id = null):array {
         echo "Listado";
     }
 }

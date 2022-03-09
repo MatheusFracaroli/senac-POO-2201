@@ -7,19 +7,19 @@ class Perfil implements InterfaceCrud {
     private $descricao;
     private $permissoes;
 
-    function criar() {
+    function criar(array $dados):bool {
         echo "Criado";
     }
 
-    function apagar() {
+    function apagar(int $id):bool {
         echo "Apagado";
     }
 
-    function editar() {
+    function editar(int $id, array $dados):bool {
         echo "Editado";
     }
 
-    function listar() {
+    function listar(int $id = null):bool {
         echo "Listado";
     }
 }
