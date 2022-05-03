@@ -14,7 +14,21 @@ abstract class Model extends PDO {
 
     abstract function atualizar(int $id, array $dados):bool; 
 
-    abstract function apagar(int $id):bool; 
+    abstract function apagar(int $id):bool {
+        $stmt = $this->prepare("DELETE FROM {$this->tabela} WHERE id = :id");
+
+        $stmt->bindParam(':id', $id);
+
+        $stmt->execute();
+
+        if($stmt->rowCount()> 0){
+            return true;
+        }else{
+            return false;
+        }
+
+        return true;
+    }
 
     abstract function listar(int $id = null):?array;
 }
