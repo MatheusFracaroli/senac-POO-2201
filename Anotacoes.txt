@@ -1,0 +1,20 @@
+- O conceito de única responsabilidade é muito importante para a construção de um projeto, pois auxilia muito na sua manutenção e também na cobertura de testes.
+- É importante que os métodos de uma classe sempre façam somente o que foi descrito no seu nome, como por exemplo: um método que se chama configurarBotão não pode ser responsável por setar o texto de uma label.
+- Padrões arquiteturais são essenciais em projetos grandes, fazendo com que cada arquivo nele presente seja responsável por uma atividade dentro do seu projeto
+- Grasp é caracterizado por padrões em POO, que são:
+
+
+Controller - Recebe e coordena ações do sistema, regras de negócio.
+Creator - Classe responsável por criar objetos
+Indirection - Possui um intermediário entre a model e a controller
+
+- Quanto mais coberto por testes um projeto é, mais seguro e completo ele acaba sendo, evitando erros que podem acontecer no ambiente de produção, que prejudicaria os clientes e também a empresa.
+- É importante também definir o nível de proteção dos recursos nas suas classes, para que não possam ser acessados erroneamente em alguma classe que não deveria implementar tal funcionalidade.
+
+O mal uso de single responsibility Principle pode levar a estes problemas:
+Falta de coesão — uma classe não deve assumir responsabilidades que não são suas;
+Alto acoplamento — Mais responsabilidades geram um maior nível de dependências, deixando o sistema engessado e frágil para alterações;
+Dificuldades na implementação de testes automatizados — É difícil de “mockar” esse tipo de classe;
+Dificuldades para reaproveitar o código;
+
+É possível fazer uma separação maior de classes para que elas resolvam somente o problema que são designadas, retirando a responsabilidade de uma classe que possivelmente seria maior, contendo responsabilidades demais.
