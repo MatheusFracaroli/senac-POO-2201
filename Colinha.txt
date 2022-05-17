@@ -1,0 +1,17 @@
+- Open/close: as classes e métodos devem ser implementados de forma que qualquer mudança feita no código, não afete a parte que já foi implementada/testada.
+Uma implementação pode resolver diversos problemas que sigam uma mesma linha, sem ser modificada, apenas implementada de outra forma no lugar onde for desejado.
+
+- Padrão de projeto Strategy: utiliza uma interface para apresentar os métodos necessários.
+Interface é um modo de resolver este problema, já que contém métodos abstratos que podem ser consumidos por diferentes classes, tendo a implementação dentro dela, seguindo os padrões que o seu arquivo necessitar para realizar a funcionalidade.
+
+- O padrão de projeto Template utiliza uma classe abstrata para realizar esse procedimento, e não uma interface.
+Se uma classe pode abranger o mesmo método para diversas classes, é melhor utilizar uma classe abstrata, e não uma interface.
+
+- Substituição de barbara liskov: as classes filhas nunca devem quebrar as definições de tipo das classes pai.
+Uma subclasse deve sobrescrever da classe pai sem que modifique as informações nela contida, para que não quebre outros lugares onde são utilizados recursos dessa mesma classe pai.
+Uma classe pai que contém métodos que classes filho não deveriam utilizar, da sinais de que não deveriam estar lá, pois não se enquadram em todos os casos que classes filho podem precisar.
+
+
+- Interface segregation: nenhum código cliente deve ser obrigato a implementar todos os métodos.
+O correto seria o cliente implementar somente as classes que precisa, não podendo deixar um método de interface vazio, sem implementação, porque não precisa implementá-lo.
+É mais correto uma classe implementar diversas interfaces do que ter apenas uma interface contendo métodos que não serão utilizados.
