@@ -15,3 +15,12 @@ Uma classe pai que contém métodos que classes filho não deveriam utilizar, da
 - Interface segregation: nenhum código cliente deve ser obrigato a implementar todos os métodos.
 O correto seria o cliente implementar somente as classes que precisa, não podendo deixar um método de interface vazio, sem implementação, porque não precisa implementá-lo.
 É mais correto uma classe implementar diversas interfaces do que ter apenas uma interface contendo métodos que não serão utilizados.
+
+- Dependency Inversion: módulos de alto nível não devem depender de módulos de baixo nível.
+Um módulo de alto nível é o módulo que depende de um outro, e o meodulo de baixo nível é aquele que não depende de nenhum outro.
+Os detalhes devem depender das abstrações, mas as abstrações não devem depender dos detalhes (utilizar uma abstração para que a sua classe possa se comunicar, sem depender de APIs, por exemplo).
+
+Padrão de projeto Factory: não instanciar dentro de uma classe.
+Uma classe factory instancia os objetos que são necessários, sem necessidade de fazer isso dentro da classe, apenas utilizar o método que já está implementado na factory.
+O módulo de baixo nível deve ser mais estável que o módulo de baixo nível, pois não devemos fazer muitas mudanças no baixo nível, pois ele tem mais responsabilidades importantes dentro do projeto.
+É importante fazer alterações em pedaços que não são tão importantes, para evitar quaisquer erros graves ao executar o projeto.
