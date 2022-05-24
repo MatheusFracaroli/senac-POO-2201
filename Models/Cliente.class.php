@@ -49,4 +49,23 @@ abstract class Cliente extends Model {
 
         return $lista;
     }
+
+    function carteiraCliente(int $id_cliente):array {
+        $stmt = $this->prepare("SELECT 
+                                id,qtd,id_ativo 
+                                FROM 
+                                {$this->tabela} 
+                                WHERE 
+                                id_cliente = :id");
+        $stmt->bindParam(':id', $id);
+
+        $stmt->execute();
+
+        $lista = [];
+
+        while($registro = $stmt->fetch(PDO::FETCH_ASSOC)) {
+         $lista[] = $registro;
+        } 
+        return $lista;
+    }
 }
