@@ -1,11 +1,17 @@
 <?php 
-require __DIR__ . '/Model.class.php';
+require_once __DIR__ . '/Model.class.php';
+require_once __DIR__ . '/Investimento.class.php';
 
 abstract class Cliente extends Model {
+
+    private Investimento $investimento;
+
     public function __construct()
     {
         $this->tabela = 'clientes';
         parent::__construct();
+
+        this->investimento = new Investimento;
     }
 
     function inserir(array $dados):?int {
@@ -50,7 +56,7 @@ abstract class Cliente extends Model {
         return $lista;
     }
 
-    function carteiraCliente(int $id_cliente):array {
+    function carteira(int $id_cliente):array {
         $stmt = $this->prepare("SELECT 
                                 id,qtd,id_ativo 
                                 FROM 
